@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Rotator : MonoBehaviour
 {
@@ -24,8 +25,19 @@ public class Rotator : MonoBehaviour
         if(Input.GetKey(KeyCode.T)){
             this.GetComponent<Transform>().Rotate(0, -rotationSpeed, 0);
         }
+        
 
 
+    }
+
+    
+     public void Rotate1( /*InputAction.CallBackContext context*/ )
+    {
+        this.GetComponent<Transform>().Rotate(0, rotationSpeed, 0);
+    }
+
+    public void Rotate2 ( /*InputAction.CallbackContent context*/) {
+        this.GetComponent<Transform>().Rotate(0, -rotationSpeed, 0);
     }
     
 
