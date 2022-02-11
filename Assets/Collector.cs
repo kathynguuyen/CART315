@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collector : MonoBehaviour
 {
     public string collectibleTag;
+    public AudioSource pickupSound;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class Collector : MonoBehaviour
     {
         if(collision.gameObject.tag == collectibleTag)
         {
+            pickupSound.Play( );
             GameObject.Destroy(collision.gameObject);
         }
     }

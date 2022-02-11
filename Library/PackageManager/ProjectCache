@@ -548,6 +548,7 @@ m_PackageAssets:
         - 1.2.2
         - 1.2.3
         - 1.2.4
+        - 1.2.5
         compatible:
         - 1.0.2
         - 1.0.3
@@ -561,7 +562,8 @@ m_PackageAssets:
         - 1.2.2
         - 1.2.3
         - 1.2.4
-        verified: 1.2.4
+        - 1.2.5
+        verified: 1.2.5
       dependencies: []
       resolvedDependencies: []
       keywords: []
@@ -778,6 +780,7 @@ m_PackageAssets:
         - 5.0.0-pre.10
         - 5.0.1
         - 5.0.3
+        - 5.0.4
         compatible:
         - 4.0.2
         - 4.0.3
@@ -807,6 +810,7 @@ m_PackageAssets:
         - 5.0.0-pre.10
         - 5.0.1
         - 5.0.3
+        - 5.0.4
         verified: 4.5.2
       dependencies:
       - name: com.unity.settings-manager
